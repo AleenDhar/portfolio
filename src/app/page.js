@@ -63,7 +63,7 @@ export default function Home() {
 
 
       <div id='projects' className='container mt-24 mx-auto px-12 py-4'>
-      {/* <Projects2/> */}
+      <Projects2/>
       </div>
    
       <div className='container mt-24 mx-auto px-12 py-4 -z-10'>

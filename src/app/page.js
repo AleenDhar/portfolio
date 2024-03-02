@@ -20,9 +20,7 @@ const Earth = dynamic(() => import('@/components/earth'), {
   loading: () => <img src="/assets/placeholder.png"></img>
 })
 
-const Scene = dynamic(() => import('@/components/Scene'), {
-  ssr: false,
-})
+
 
 export default function Home() {
 
@@ -53,7 +51,7 @@ export default function Home() {
 
       <StickyCursor/>
       {/* <div className="h-screen">
-      <Scene />
+     
       </div> */}
       <Landing2/>
 

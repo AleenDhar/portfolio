@@ -20,6 +20,10 @@ const Earth = dynamic(() => import('@/components/earth'), {
   loading: () => <img src="/assets/placeholder.png"></img>
 })
 
+const Scene = dynamic(() => import('@/components/Scene'), {
+  ssr: false,
+})
+
 export default function Home() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -48,14 +52,17 @@ export default function Home() {
       </AnimatePresence>
 
       <StickyCursor/>
+      {/* <div className="h-screen">
+      <Scene />
+      </div> */}
       <Landing2/>
 
-      <div id="about" className={styles.earth}>
+      {/* <div id="about" className={styles.earth}>
 
       <Earth />
       <About/>
 
-      </div>
+      </div> */}
 
       <div className="text-white">
       <About2/>
